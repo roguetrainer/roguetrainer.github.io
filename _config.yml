@@ -1,0 +1,8 @@
+excerpt_separator: ""
+pygments: true
+markdown: kramdown
+url: http://roguetrainer.github.io
+title: roguetrainer
+tagline: F# for finance
+description: F# for finance
+paginate: 5
