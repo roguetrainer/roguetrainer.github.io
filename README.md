@@ -7,6 +7,7 @@ the https://roguetrainer.github.io/ web site. This uses the https://tinypress.co
 Tools and tricks are borrowed from Tomas Petricek's site: http://tomasp.net.
 
 Useful links:
+* https://github.com/roguetrainer/roguetrainer.github.io/blob/master/README.md (this file)
 * https://github.com/
 * https://help.github.com/categories/bootcamp/
 * https://tinypress.co/
