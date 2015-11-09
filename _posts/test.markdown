@@ -23,26 +23,11 @@ The Gamma: Simple code behind interactive articles
 <img src="http://tomasp.net/blog/2015/thegamma/dj.png" style="float:right;width:300px"
   title="Illustration from 'The Data Journalism Handbook'" />
 
-There are huge amounts of data around us that we could use to better understand the world.
-Every company collects large amounts of data about their sales or customers. Governments and
-international organizations increasingly release interesting data sets to the public through
-various _open government data_ initiatives ([data.gov](http://data.gov) or 
+Links ([data.gov](http://data.gov) or 
 [data.gov.uk](http://data.gov.uk)). But raw data does not tell you much.
 
-An interesting recent development is _data journalism_. Data journalists tell stories using
-data. A data driven article is based on an interesting observation from the data, it includes
-(interactive) visualizations that illustrate the point and it often allows the reader to get
-the raw data.
 
-Adding a chart produced in, say, Excel to an article is easy, but building good interactive
-visualization is much harder. Ideally, the data driven article should not be just text with
-static pictures, but a _program_ that links the original data source to the visualization.
-This lets readers explore how the data is used, update the content when new data is available
-and change parameters of the visualization if they need to understand different aspect of the
-topic.
 
-This is in short what I'm trying to build with [The Gamma project](http://thegamma.net). If
-you're interested in building better reports or data driven articles, continue reading!
 
 > <img src="http://tomasp.net/blog/2015/thegamma/sl.png" style="float:right;width:150px" />
 >
@@ -57,16 +42,10 @@ programme</a> to work on this and if the project sounds like something you'd lik
 <a href="mailto:tomas@tomasp.net">please get in touch</a> or share your contact details
 on [The Gamma page](http://thegamma.net)!
 
-Why reporting needs innovation
+SubSection
 ------------------------------
 
-There is a number of reasons why data journalism and reporting in general need better tools. 
-When I see a report on a problem that I want to understand better, I want to be able to see how
-exactly is the report created and how are the inputs pre-processed. I want to be able to modify
-some of the parameters (for example, add another country to a comparison) or see what a different
-view of the data would say (look at _per capita_ values rather than absolute numbers). Sadly, this
-is almost never possible. What I would like to see is an environment that offers these three 
-properties:
+Bullets
 
  * **Reproducibility** - The report should be fully reporoducible. Serious newspapers cite their
    data sources, but reproducing report using just a citation involves a lot of manual work. 
@@ -83,23 +62,7 @@ properties:
    the reproducibility and transparency behind reports to allow new user experiences. The reader
    should be able to explore the data and do some of the changes without being a programmer.
 
-I think many would agree with these points. It's just hard to make this easy and accessible enough.
- The [Data Journalism Handbook](http://datajournalismhandbook.org) describes some of the tools
-that people use currently. Most non-programmers obtain data by hand and then use tools like 
-Google Sprehadsheets and Excel (making reproducibility and transparency hard). Pre-processing is
-done using ad hoc scripts (using Perl, R, Python etc.) that are not very general and would not work
-on different inputs. And finally, the few reports that are interactive are usually single-purpose
-applications (typically written in JavaScript).
 
-How can we do better
---------------------
-
-Modern programming languages have a number of features that make working with data _much_ easier
-than before. Features like LINQ in C# (inspired by functional style) make it easy to transform data
-and _type providers_ in F# integrate external data sources directly into the programming language.
-If you have not seen type providers before, the following is a demo showing the [World Bank type
-provider](http://fsharp.github.io/FSharp.Data/) running inside the [Ionide project](http://ionide.io/)
-(inside the Atom editor):
 
 <div style="text-align:center;">
 <img src="atom.png" style="max-width:500px;margin-left:auto;margin-right:auto;" />
@@ -150,23 +113,7 @@ and compares countries in the world based on their CO2 emissions:
   }, false);
 </script>
 
-It looks like China is the largest producer of CO2 emissions in the world followed by the US. But
-there are a few interesting questions you can ask about the data - and the interactive visualization
-lets you explore those:
 
- - What was the situation like in 1990 or 1980? You can explore this by clicking "options" and 
-   changing the year using the drop down. (When did China overtook US as the largest polluter?)
- 
- - What if we compare CO2 emissions _per capita_ rather than absolute numbers? (It turns out that
-   large developing countries like China and India are no longer the largest polluters...)
-
- - How is this actually created? There is no pre-processing in this demo, but you can still see
-   all the details (like the color scheme) if you click on the "source" button.
-
-As you can see, it is possible to embed visualization created using The Gamma into your own web page
-(ping me if you are interested). The exmple is part of a larger demo that I created, which shows
-other interesting aspects of the project. Check out the [full version of the CO2 emissions demo](http://thegamma.net/carbon)
-on The Gamma web site. 
 
 The third example on the page (pie chart) is a bit more interesting, because it implements a simple
 pre-processing. It takes top 6 countries and shows them together with all other countries. This is
