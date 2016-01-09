@@ -3,6 +3,6 @@ pygments: true
 markdown: kramdown
 url: http://roguetrainer.github.io
 title: roguetrainer
-tagline: F# for finance
-description: F# for finance
+tagline: F# for finance & reactive risk
+description: F# for finance & reactive risk
 paginate: 5
