@@ -2,7 +2,7 @@ excerpt_separator: ""
 pygments: true
 markdown: kramdown
 url: http://roguetrainer.github.io
-title: roguetrainer
+title: rogue trainer
 tagline: F# for finance & reactive risk
 description: F# for finance & reactive risk
 paginate: 5
